@@ -1,2 +1,2 @@
-#To-do-list
-#vanilla JS
+# To-do-list <br>
+# vanilla JS
