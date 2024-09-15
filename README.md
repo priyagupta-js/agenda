@@ -1,2 +1,2 @@
 # To-do-list <br>
-# vanilla JS
+Tech stack: <b>vanilla JS</b>
