@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading
+{
+background-color: #5891e7;
+color: #fff;
+height: 60px;
+padding: 12px;
+cursor: pointer;
+}
+
+.input{
+    padding:30px;
+    text-align: center;
+}
+
+.btn{
+    color: #fff;
+    background-color: #064bb4;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn :hover
+{
+    
+}
+
