@@ -11,9 +11,10 @@ function displayList(event)
     message = text.value;
     // results.innerHTML = message;
     let Li = document.createElement("li");
+    Li.setAttribute("class","listitem");
     let textNode = document.createTextNode(message);
     Li.appendChild(textNode);
-    if (message == " ")
+    if (message === " ")
     {
         alert("You must write something");
     }
@@ -22,7 +23,7 @@ function displayList(event)
         results.appendChild(Li);
     }
     text.value=" ";
-    // LiElement.style.listStyleType = "circle";
+    // Li.style.listStyleType = "none";
     
 }
 

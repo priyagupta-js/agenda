@@ -27,9 +27,26 @@ cursor: pointer;
     border-radius: 5px;
     cursor: pointer;
 }
-
-.btn :hover
+#text
 {
-    
+    padding: 5px;
+}
+.results_display
+{
+    width: 70%;
+    padding-left: 100px;
 }
 
+ul li:nth-child(odd)
+{
+    background-color: #f9f9f9;
+}
+
+ ul li
+{
+    padding: 8px 0 ;
+}  
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
