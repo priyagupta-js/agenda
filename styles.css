@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .heading
@@ -37,16 +38,21 @@ cursor: pointer;
     padding-left: 100px;
 }
 
+ul li
+{
+    background-color: #e0e0e0;
+    padding: 8px 0 ;
+    cursor: pointer;
+}  
+
+
+ul li.checked{
+    text-decoration: line-through;
+    /* background color not working */
+    /* background-color: rgb(99, 99, 99); */
+}
+
 ul li:nth-child(odd)
 {
     background-color: #f9f9f9;
-}
-
- ul li
-{
-    padding: 8px 0 ;
-}  
-
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
