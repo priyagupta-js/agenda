@@ -4,6 +4,7 @@ let results = document.querySelector("#D_results");
 
 S_button.addEventListener("keypress", displayList);
 S_button.addEventListener("click", displayList);
+
 // when add button is clicked or ENTER is pressed, a new list is added below the button
 
 function displayList(event) 
@@ -12,12 +13,13 @@ function displayList(event)
     // {
         event.preventDefault();
         // document.getElementById("btn-submit").click();
-        message = text.value;
+        let message = text.value.trim();
         // results.innerHTML = message;
         let Li = document.createElement("li");
         let textNode = document.createTextNode(message);
         Li.appendChild(textNode);
-        if (message === " ") 
+       
+        if (message === "")
             {
             alert("You must write something");
             } 
@@ -25,8 +27,21 @@ function displayList(event)
         {
             results.appendChild(Li);
         }
-        text.value = " ";
-    // Li.style.listStyleType = "none";
+        text.value = "";
+
+        // Add a close button and append it to a list
+        let span = document.createElement("span");
+        let close_btn = document.createTextNode("\u00D7");
+        span.setAttribute("class","close");
+        span.appendChild(close_btn);
+        Li.appendChild(span);
+
+        // remove the list when close button is clicked
+        span.onclick = function(){
+          // get the parent element 
+          let parent = this.parentElement;
+          parent.style.display = "none";
+        }
   }
 // }
 
@@ -48,3 +63,8 @@ list.addEventListener(
   },
   false
 );
+
+
+
+
+
